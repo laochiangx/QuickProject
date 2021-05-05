@@ -1,1 +1,14 @@
-# QuickProject
+
+![9](https://user-images.githubusercontent.com/28785691/117138067-22505600-addd-11eb-879e-dab02ac5c214.png)
+![10](https://user-images.githubusercontent.com/28785691/117138073-22e8ec80-addd-11eb-8053-44a5899bffe2.png)
+![11](https://user-images.githubusercontent.com/28785691/117138077-23818300-addd-11eb-91ac-93e6b376f1d5.png)
+![12](https://user-images.githubusercontent.com/28785691/117138080-241a1980-addd-11eb-91e2-199bc63d8b17.png)
+![13](https://user-images.githubusercontent.com/28785691/117138084-24b2b000-addd-11eb-867f-66af54373634.png)
+![1](https://user-images.githubusercontent.com/28785691/117138090-254b4680-addd-11eb-98d6-019557445b26.png)
+![2](https://user-images.githubusercontent.com/28785691/117138094-267c7380-addd-11eb-8525-2af3f7d8c76a.png)
+![3](https://user-images.githubusercontent.com/28785691/117138099-27150a00-addd-11eb-9f2b-4f5b865c6fca.png)
+![4](https://user-images.githubusercontent.com/28785691/117138103-27ada080-addd-11eb-8cd5-4f910a6714ee.png)
+![5](https://user-images.githubusercontent.com/28785691/117138109-28decd80-addd-11eb-8e33-3a251c0ee5a5.png)
+![6](https://user-images.githubusercontent.com/28785691/117138114-29776400-addd-11eb-92f2-119c6fe4a165.png)
+![7](https://user-images.githubusercontent.com/28785691/117138049-1f556580-addd-11eb-9ff2-d45e2c893b4a.png)
+![8](https://user-images.githubusercontent.com/28785691/117138063-211f2900-addd-11eb-8ff0-5d471b397915.png)
