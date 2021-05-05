@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.QuickProject.system.mapper.SysOrgMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.project.QuickProject.system.entity.SysOrg">
+        <id column="id" property="id" />
+        <result column="org_pid" property="orgPid" />
+        <result column="org_pids" property="orgPids" />
+        <result column="is_leaf" property="isLeaf" />
+        <result column="org_name" property="orgName" />
+        <result column="address" property="address" />
+        <result column="status" property="status" />
+        <result column="sort" property="sort" />
+        <result column="level" property="level" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="del_flag" property="delFlag" />
+        <result column="tenant_id" property="tenantId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, org_pid, org_pids, is_leaf, org_name, address, status, sort, level, create_time, update_time, del_flag, tenant_id
+    </sql>
+
+    <select id="listByUserId" resultType="com.project.QuickProject.system.entity.SysOrg">
+
+        SELECT DISTINCT
+        b.*
+        FROM
+        sys_org_user a
+        JOIN sys_org b ON a.org_pid = b.id where a.user_id IN
+        <foreach collection="userId" item="id" index="index" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+        ORDER BY sort ASC
+
+    </select>
+
+</mapper>

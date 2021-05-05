@@ -1,0 +1,26 @@
+server:
+  port: 11010
+  tomcat:
+    threads:
+      max: 1000
+  shutdown: graceful
+spring:
+  profiles:
+    active: dev,other
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+    servlet:
+      load-on-startup: 1
+management:
+  security:
+    enabled: false
+

@@ -1,0 +1,43 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sys_admin?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: Password01
+    name: sys_admin-datasource
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 20s
+    lettuce:
+      pool:
+        min-idle: 0
+        max-idle: 8
+        max-active: 8
+        max-wait: -1ms
+#mybatis-plus
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*/*Mapper.xml
+  configuration:
+    mapUnderscoreToCamelCase: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+#log
+#log
+logging:
+  level:
+    com:
+      project:
+        QuickProject:
+          system:
+            mapper: debug
+## mybatis-plus配置
+#mybatis-plus:
+#  global-config:
+#    banner: false
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

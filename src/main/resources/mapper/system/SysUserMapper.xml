@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.QuickProject.system.mapper.SysUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.project.QuickProject.system.entity.SysUser">
+        <id column="id" property="id" />
+        <result column="username" property="username" />
+        <result column="nick_name" property="nickname" />
+        <result column="password" property="password" />
+        <result column="email" property="email" />
+        <result column="phone" property="phone" />
+        <result column="avatar" property="avatar" />
+        <result column="status" property="status" />
+        <result column="sort" property="sort" />
+        <result column="is_admin" property="isAdmin" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="del_flag" property="delFlag" />
+        <result column="tenant_id" property="tenantId" />
+        <result column="update_user" property="updateuser" />
+        <result column="last_login_ip" property="lastloginip" />
+        <result column="last_login_time" property="lastlogintime" />
+        <result column="remark" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, username, nick_name,password, email, phone, avatar, status, sort,
+         is_admin, create_time, update_time,
+          del_flag, tenant_id,update_user,last_login_ip,last_login_time,remark
+    </sql>
+    <select id="listByUserIds" resultType="com.project.QuickProject.system.vo.UserRoleVO">
+                SELECT
+                b.*,
+                c.role_name AS role_name
+                FROM
+                (
+                SELECT * FROM sys_user_role a WHERE a.user_id IN
+        <foreach collection="userIds" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+        ) b
+                LEFT JOIN sys_role c ON b.role_id = c.id
+
+    </select>
+
+</mapper>

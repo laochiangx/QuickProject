@@ -1,0 +1,15 @@
+#此处是除开基础的权限管理后的其他配置
+localFile:
+  basePath: D:\software\nginx-1.18.0\html\public #表示的是文件上传、文件浏览的basePath，前台操作的就是此文件夹下的资源
+  shardPath: D:\software\nginx-1.18.0\html\shard #这个是大文件临时分片的保存路径
+  baseUrl: http://192.168.0.109:8051/uploadFile #这个是文件上传后的的http路径前缀，比如图片等，其实我这里的url被nginx设置了映射，我映射的就是上面basePath的资源
+
+
+#nginx demo
+#server{
+#  ...
+#  location /uploadFile/ {
+#    alias   html/public/;
+#  }
+#  ...
+#}
