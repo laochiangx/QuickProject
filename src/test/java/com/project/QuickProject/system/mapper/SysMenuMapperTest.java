@@ -30,13 +30,6 @@ public class SysMenuMapperTest {
     @Test
     public void SysMenuMapperTest2() {
 
-//        List<Integer> list=new ArrayList<>();
-//        list.add(1);
-//        list.add(2);
-//        list.remove(null);
-//        System.out.println(list.toString());
-//        //List<SysMenu> newlst=sysMenuMapper.listByRoleId(list);
-//        System.out.println(newlst.toString());
     }
     @Test
     public void getsysMenuTest() {
