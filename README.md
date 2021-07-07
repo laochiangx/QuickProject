@@ -104,7 +104,7 @@ npm run lint
 npm run lint -- --fix
 ```
 
-附上最后一张类图
+附上最后一张图表形式的类继承链
 
 ![SecurityConfig](https://user-images.githubusercontent.com/28785691/124714808-d3d24b80-df34-11eb-9079-e50f3160d74e.png)
 
